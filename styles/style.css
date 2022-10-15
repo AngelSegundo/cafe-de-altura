@@ -177,7 +177,6 @@ h1 {
 .paragraph {
     width: 588px;
     height: 32px;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -650,15 +649,32 @@ h1 {
     opacity: 0.9;
 }
 
+.leadingContent h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #111827;
+}
+
+.leadingContent p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6B7280;
+}
+
 .contactSection {
-    background-color: lightcoral;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 32px;
+    gap: 10px;
     width: 588px;
     height: 320px;
+}
+
+.contactSection a {
+    color: #000;
 }
 
 .trailingContent {
@@ -694,6 +710,10 @@ input {
     border-radius: 6px;
 }
 
+input[type=checkbox] {
+    transform: scale(1.8);
+}
+
 .articleForm {
     display: flex;
     flex-direction: column;
@@ -713,6 +733,12 @@ input {
 
 textarea {
     height: 110px;
+}
+
+.checkterm {
+    display: flex;
+    vertical-align: middle;
+
 }
 
 #checkBoxForm {
@@ -743,38 +769,6 @@ textarea {
     color: #fff;
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
     display: flex;
