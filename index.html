@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<!-- NAV,SECTIONS -->
+
 
 <body class="container">
     <nav class="container navBar">
@@ -37,9 +37,18 @@
                 <a href="">Iniciar sesión</a>
             </div>
         </article>
-        <picture>
-            <img src="./assets/img/Carr.png" alt="Carrito de compras">
+        <picture class="shopingCarIcon">
+            <img onclick="showCart(this)" class="cart" src="./assets/img/Carr.png" alt="Carrito de compras">
+            <p class="count-product">0</p>
         </picture>
+
+        <div class="cart-products" id="products-id">
+            <p class="close-btn" onclick="closeBtn()">X</p>
+            <h3>Mi carrito</h3>
+            <div class="card-items"></div>
+            <h2>Total: <strong class="price-total">0</strong> $</h2>
+        </div>
+
     </nav>
     <header class="container hero">
         <div class="heroWrapper">
@@ -50,14 +59,6 @@
                 <h1>
                     El mejor café del mundo, ahora en tu casa.
                 </h1>
-                <p class="paragraph">
-                    Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos
-                    de
-                    café
-                    y
-                    que
-                    puedas viajar desde la comodidad de tu hogar.
-                </p>
                 <div class="button">
                     <a class="origins" href="">Descubrir orígenes</a>
                     <a class="shopping" href="">Comprar café</a>
@@ -107,11 +108,11 @@
                     <img src="./assets/img/coffeeBagTarrazú.png" alt="Coffee Bag Tarrazú">
                 </picture>
                 <div class="productInfo">
-                    <a href="">Costa Rica Tarrazú</a>
-                    <p>9,00 €</p>
+                    <a class="productName" href="" id="costaRicaTarrazú" data-id="1">Costa Rica Tarrazú</a>
+                    <p class="productPrice"><span>9.00</span>€</p>
                 </div>
                 <div class="productButton">
-                    <a href="">Añadir</a>
+                    <a class="addProduct" href="">Añadir</a>
                 </div>
             </article>
             <article class="productCard">
@@ -119,11 +120,11 @@
                     <img src="./assets/img/coffeeBagColombia.png" alt="Coffee Bag Colombia">
                 </picture>
                 <div class="productInfo">
-                    <a href="">Colombia Los Naranjos</a>
-                    <p>9,00 €</p>
+                    <a class="productName" href="" id="colombiaLosNaranjos" data-id="2">Colombia Los Naranjos</a>
+                    <p class="productPrice"><span>9.00</span>€</p>
                 </div>
                 <div class="productButton">
-                    <a href="">Añadir</a>
+                    <a class="addProduct" href="">Añadir</a>
                 </div>
             </article>
             <article class="productCard">
@@ -131,23 +132,23 @@
                     <img src="./assets/img/coffeeBagLaos.png" alt="Coffee Bag Laos">
                 </picture>
                 <div class="productInfo">
-                    <a href="">Laos Amanecer</a>
-                    <p>9,00 €</p>
+                    <a class="productName" href="" id="laosAmanecer" data-id="3">Laos Amanecer</a>
+                    <p class="productPrice"><span>9.00</span>€</p>
                 </div>
                 <div class="productButton">
-                    <a href="">Añadir</a>
+                    <a class="addProduct" href="">Añadir</a>
                 </div>
             </article>
-            <article class="productCard">
+            <article class="productCard" " value=" etiopíaYrgacheff">
                 <picture class="productImg">
                     <img src="./assets/img/coffeeBagEtiopía.png" alt="Coffee Bag Etiopía">
                 </picture>
                 <div class="productInfo">
-                    <a href="">Etiopía Yrgacheff</a>
-                    <p>9,00 €</p>
+                    <a class="productName" href="" id="etiopíaYrgacheff" data-id="4">Etiopía Yrgacheff</a>
+                    <p class="productPrice"><span>9.00</span>€</p>
                 </div>
                 <div class="productButton">
-                    <a href="">Añadir</a>
+                    <a class="addProduct" href="">Añadir</a>
                 </div>
             </article>
         </div>
@@ -323,6 +324,7 @@
     <section class=" copyRighFooter">
         <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
     </section>
+    <script src="./main.js"></script>
 </body>
 
 </html>
