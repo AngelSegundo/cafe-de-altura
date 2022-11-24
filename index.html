@@ -46,7 +46,7 @@
             <p class="close-btn" onclick="closeBtn()">X</p>
             <h3>Mi carrito</h3>
             <div class="card-items"></div>
-            <h2>Total: <strong class="price-total">0</strong> $</h2>
+            <h2>Total: <strong class="price-total">0</strong>€</h2>
         </div>
 
     </nav>
@@ -170,7 +170,7 @@
                 </picture>
             </div>
             <hr>
-            <p>Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te
+            <p class="answer">Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te
                 preguntaremos cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café.
             </p>
         </article>
@@ -182,7 +182,7 @@
                 </picture>
             </div>
             <hr>
-            <p>Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si
+            <p class="answer">Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si
                 podemos ofrecerte estos precios es porque tratamos directamente con los productores de café, sin
                 intermediarios. Así obtenemos el mejor precio para ti y la persona que está detrás de los granos
                 de café recibe el mayor beneficio posible. </p>
@@ -191,9 +191,11 @@
             <div class="chevronup">
                 <h3>¿Es posible enviar café a mi oficina? </h3>
                 <picture>
-                    <img src="./assets/img/Iconchevrondown.png" alt="Chevron Up">
+                    <img src="./assets/img/Iconchevronup.png" alt="Chevron Up">
                 </picture>
             </div>
+            <hr>
+            <p class="answer"></p>
         </article>
         <div class="linkDoubts">
             <a class="link" href="">Resolvemos tus dudas</a>
@@ -241,14 +243,14 @@
 
             </div>
             <div class="trailingContent">
-                <form>
+                <form id="form">
                     <article class="articleForm">
                         <label for="nameForm">Nombre Completo</label>
                         <input type="text" id="NameForm">
                     </article>
                     <article class="articleForm">
                         <label for="emailForm">Email</label>
-                        <input type="email" id="emailForm">
+                        <input type="text" id="emailForm">
                     </article>
                     <article class="articleForm">
                         <label for="phoneCode">Telefono</label>
@@ -259,7 +261,7 @@
                                 <option value="+58">+58</option>
                                 <option value="+57">+57</option>
                             </select>
-                            <input type="text" id="NameForm">
+                            <input type="text" id="phoneForm">
                         </div>
                     </article>
                     <article class="articleForm">
@@ -268,13 +270,15 @@
                     </article>
                     <article class="articleForm">
                         <div class="checkterm" id="checkBoxForm">
-                            <input type="checkbox" class="checkbox">
+                            <input type="checkbox" class="checkbox" id="checker">
                             <p>Acepto la <a href="#"><b>Política de Privacidad</b></a> y los <a href="#"><b>Términos y
                                         condiciones.</a></b></p>
+
                         </div>
                     </article>
                     <article class="articleForm help">
-                        <a id="enviarForm" href="#">Enviar</a>
+                        <button id="enviarForm" >Enviar</button>
+                        
                     </article>
                 </form>
             </div>

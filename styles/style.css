@@ -117,12 +117,13 @@ body {
 }
 
 
-.cart{
+.cart {
     width: 39px;
     height: 38px;
 }
-.cart-products{
-    position: absolute!important;
+
+.cart-products {
+    position: absolute;
     top: 82px;
     right: -18px;
     color: #000;
@@ -130,11 +131,10 @@ body {
     padding: 0 18px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     display: none;
-
     min-width: 290px;
 }
 
-.cart:hover{
+.cart:hover {
     margin-bottom: 16px;
     transition-duration: .5s;
 }
@@ -539,7 +539,7 @@ h1 {
 .infoFAQ hr {
     width: 620px;
     height: 0px;
-    border: 1px solid #E3DED7;
+    border: 1px solid black;
 }
 
 .infoFAQ p {
@@ -735,10 +735,11 @@ input {
     border: 1px solid #D1D5DB;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
+
 }
 
 input[type=checkbox] {
-    transform: scale(1.8);
+    transform: scale(1.5);
 }
 
 .articleForm {
@@ -756,6 +757,7 @@ input[type=checkbox] {
 
 .phoneBox {
     display: flex;
+
 }
 
 textarea {
@@ -764,12 +766,12 @@ textarea {
 
 .checkterm {
     display: flex;
+    align-items: center;
     vertical-align: middle;
-
 }
 
 #checkBoxForm {
-    display: flex;
+    display: flexbox;
     gap: 10px;
     align-items: center;
 }
@@ -781,20 +783,30 @@ textarea {
 }
 
 .help {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     padding: 12px 24px;
     width: fit-content;
     background: #2A5B45;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
+    flex: none;
+    order: 5;
+    flex-grow: 0;
 }
 
-.help a {
+#enviarForm {
+    background-color: #2A5B45;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
     color: #fff;
+    border: none;
     text-decoration: none;
+    cursor: pointer;
+
+
 }
 
 footer {
@@ -936,3 +948,17 @@ footer {
     color: #FFFFFF;
     text-align: center;
 }
+
+.answer {
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+}
+
+
+.open_close {
+    max-height: 500px;
+    transition: max-height 1.2s ease-in;
+}
+
