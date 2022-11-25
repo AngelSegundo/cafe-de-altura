@@ -475,7 +475,7 @@ h1 {
     align-items: center;
     padding: 48px 0%;
     gap: 24px;
-    height: 604px;
+    height:auto;
     background: #2A5B45;
 
 }

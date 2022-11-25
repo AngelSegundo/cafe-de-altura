@@ -120,16 +120,20 @@ questions.forEach((question, key) => {
     question.addEventListener("click", () => {
         answer[key].classList.toggle("open_close")
         rotate(chevronup[key])
+        
     })
 })
+
+  
+
 
 const rotate = (img) => {
     if (img.style.transform === '') {
         img.style.transform = 'rotate(180deg)'
-        img.style.transition = "all 0.4s"        
+        img.style.transition = "0.4s"
     } else {
         img.style.transform = ''
-        img.style.transition = "all .7s"
+        img.style.transition = ".7s"
     }
 }
 
