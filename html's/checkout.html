@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Checkout - Cafe de Altura</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/checkout.css">
+</head>
+
+<body>
+    <main class="container">
+        <nav class="navBar">
+            <article class="logo">
+                <a href="./index.html">cafedealtura.com</a>
+                <img src="../assets/img/coffeCup.png" alt="Coffe Cup">
+            </article>
+            <article class="menuWrapper">
+                <a href="./tienda.html">Tienda</a>
+                <a href="">Suscipción</a>
+                <a href="">Para empresas</a>
+                <a href="">Sobre nosotros</a>
+                <a href="">Contacto</a>
+            </article>
+            <article class="contacLink">
+                <div class="phoneContact">
+                    <img src="../assets/img/Iconphone.png" alt="Phone">
+                    <p>+34 919 49 05 18</p>
+                </div>
+                <div class="logIn">
+                    <a href="#">Iniciar sesión</a>
+                </div>
+            </article>
+            <picture class="shopingCarIcon">
+                <img class="cart" src="../assets/img/Carr.png" alt="Carrito de compras">
+                <div class="count-product"></div>
+            </picture>
+        </nav>
+
+        <section class="container productsCards">
+            <h2>Checkout</h2>
+            <div class="frame13">
+                <div class="productTable">
+                    <h3>Seleccionar método de pago</h3>
+
+                    <div class="shipping">
+                        <input class="radio" type="radio" id="choice1" name="paymentMethod" value="debit" checked />
+                        <div class="details">
+                            <p>Tarjeta de débito</p>
+                            <p>Opción estándar sin seguimiento</p>
+                        </div>
+                        <form id="form">
+                            <article class="articleForm">
+                                <label for="nameForm">Titular</label>
+                                <input type="text" id="NameForm" placeholder="Nombre del titular">
+                            </article>
+                            <article class="articleForm">
+                                <label for="cardNumber">Número de la tarjeta</label>
+                                <input type="text" id="cardNumber" placeholder="1234 1234 1234 1234">
+                            </article>
+                            <article class="articleForm">
+                                <div>
+                                    <label for="expiry">Fecha de caducidad</label>
+                                    <input type="text" id="expiry" placeholder="MM / YY">
+                                </div>
+                                <div>
+                                    <label for="cvc">CVC</label>
+                                    <input type="text" id="cvc" placeholder="123">
+                                </div>
+                            </article>
+                        </form>
+
+                        <div class="price">
+                            <p><span>5</span>€</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="shipping">
+                        <input class="radio" type="radio" id="choice2" name="paymentMethod" value="transfer" />
+                        <div class="details">
+                            <p>Transferencia bancaria a la cuenta ES12 1234 1234 123457890</p>
+                            <p>Será necesario recibir el comprobante de la transferencia para preparar tu pedido</p>
+                        </div>
+                        <div class="price">
+                            <p><span>5</span>€</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="shipping">
+                        <input class="radio" type="radio" id="choice3" name="paymentMethod" value="bizum" />
+                        <div class="details">
+                            <p>Bizum <img src="../assets/img/Bizum.png" alt="Bizum logo"></p>
+                        </div>
+                        <div class="price">
+                            <p><span>5</span>€</p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <h3>Dirección de envío</h3>
+                    <div class="address">
+                        <form id="form">
+                            <article class="articleForm">
+                                <label for="nameForm">Nombre</label>
+                                <input type="text" id="NameForm" placeholder="">
+                            </article>
+                            <article class="articleForm">
+                                <label for="lastName">Apellidos</label>
+                                <input type="text" id="lastName" placeholder="">
+                            </article>
+                            <article class="articleForm">
+                                <label for="phone">Teléfono</label>
+                                <input type="text" id="phone" placeholder="+34 600 600 600">
+                            </article>
+                            <article class="articleForm">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" placeholder="">
+                            </article>
+                            <article class="articleForm">
+                                <select id="country" class="form-select" aria-label="Default select example">
+                                    <option selected>España</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Francia">Francia</option>
+                                    <option value="Gibraltar">Gibraltar</option>
+                                    <option value="Portugal">Portugal</option>
+                                    <option value="Morocco">Morocco</option>
+                                </select>
+                            </article>
+                            <article class="articleForm">
+                                <div>
+                                    <label for="population">Poblacion</label>
+                                    <input type="text" id="population" placeholder="">
+                                </div>
+                                <div>
+                                    <label for="cp">CP</label>
+                                    <input type="text" id="cp" placeholder="123">
+                                </div>
+                            </article>
+                            <article class="articleForm">
+                                <div>
+                                    <label for="street">Calle</label>
+                                    <input type="text" id="street" placeholder="">
+                                </div>
+                                <div>
+                                    <label for="streetNumber">Nº</label>
+                                    <input type="text" id="streetNumber" placeholder="">
+                                </div>
+                                <div>
+                                    <label for="floor">Piso</label>
+                                    <input type="text" id="floor" placeholder="">
+                                </div>
+                                <div>
+                                    <label for="door">Puerta</label>
+                                    <input type="text" id="door" placeholder="">
+                                </div>
+                            </article>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="container totalCart">
+                    <div class="totalDetails">
+                        <h3>Total del carrito</h3>
+                        <hr>
+                        <div class="subTotalDetails">
+                            <p class="subtotalTitle">SUBTOTAL</p>
+                            <p class="subtotalAmount subtotal"><span>18</span>€</p>
+                        </div>
+                        <div class="subTotalDetails">
+                            <p class="subtotalTitle">ENVÍO</p>
+                            <p class="subtotalAmount"><span>GRATIS</span></p>
+                        </div>
+                        <hr>
+                        <div class="subTotalDetails">
+                            <p class="subtotalTitle">TOTAL</p>
+                            <p class="subtotalAmount total"><span>18</span>€</p>
+                        </div>
+                        <p class="subtotalIVA iva">Incluye <span>3.16</span>€ de IVA</p>
+                        <hr>
+                        <div>
+                            <button class="payAndOrder">Pagar y realizar pedido</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class=" copyRighFooter">
+            <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../JS/carrito.js"></script>
+        <script src="../JS/checkout.js"></script>
+        
+
+
+
+    </main>
+</body>
+
+</html>

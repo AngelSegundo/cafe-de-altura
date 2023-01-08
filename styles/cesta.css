@@ -1,0 +1,373 @@
+body {
+    font-family: 'outfit';
+}
+
+.navBar {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    gap: 35px;
+    height: 64px;
+    background: #2B2A2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.logo {
+    display: flex;
+    width: 186px;
+    height: 36px;
+    align-items: center;
+    gap: 7.33px;
+}
+
+.logo a {
+    width: 186px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.46px;
+    line-height: 35px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menuWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 16px;
+    width: 512px;
+    height: 32px;
+    opacity: 0;
+}
+
+.menuWrapper a {
+    width: auto;
+    height: 36px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 36px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contacLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 24px;
+    width: 288px;
+    height: 40px;
+}
+
+.phoneContact {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px;
+    gap: 8px;
+    width: 140px;
+    height: 24px;
+
+}
+
+.phoneContact p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 65px;
+    width: 108px;
+    height: 50px;
+}
+
+.logIn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 134px;
+    height: 40px;
+    background: #515051;
+    border-radius: 4px;
+}
+
+.logIn a {
+    width: 90px;
+    height: px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.shopingCarIcon {
+    justify-items: center;
+    text-align: justify;
+    align-content: center;
+
+    width: 39px;
+    height: 38px;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.count-product {
+    position: absolute;
+    top: 0;
+    transform: translate(14px, 13px);
+    z-index: 10;
+}
+
+.productsCards {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    height: auto;
+}
+
+.productsCards h2 {
+    width: 94px;
+    height: 28px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2A5B45;
+}
+
+.frame13 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 1200px;
+    height: auto;
+    background: #FFFFFF;
+}
+
+.frame13 h3 {
+    width: auto;
+    height: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.purchase {
+    display: flex;
+}
+
+.shipping {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: auto;
+    height: auto;
+}
+
+.details {
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 657px;
+    height: auto;
+    line-height: 0;
+    
+}
+
+.standar {
+    width: auto;
+    height: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.conditions {
+    width: auto;
+    height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+.totalCart {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 24px;
+    width: 384px;
+    height: auto;
+    background: #F7F5F3;
+    border-radius: 10px;
+}
+
+.totalDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0px;
+    gap: 16px;
+    width: 336px;
+    height: auto;
+}
+
+.totalDetails h3 {
+    width: 129px;
+    height: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.totalDetails hr {
+    width: 336px;
+
+}
+
+.subTotalDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    width: 336px;
+    height: 16px;
+}
+
+.subtotalTitle {
+    width: 70px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.subtotalAmount {
+    width: 48px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.subtotalIVA {
+    width: 107px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    color: #515051;
+}
+
+.buttonsWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 9px 24px;
+    gap: 8px;
+    width: 132px;
+    height: 100%;
+    background: #2A5B45;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-color: #fff;
+}
+
+.keepBuying {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 9px 24px;
+    gap: 8px;
+    width: auto;
+    height: 100%;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2A5B45;
+    border-color: #fff;
+}
+
+.copyRighFooter {
+    display: flex;
+    background: #2B2A2B;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyRighFooter p {
+    width: 359px;
+    height: 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-align: center;
+}
