@@ -116,39 +116,61 @@ body {
     text-align: center;
 }
 
-
 .shopingCarIcon {
-    justify-items: center;
-    text-align: justify;
-    align-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 56px;
+    height: 24px;
+}
 
-    width: 39px;
-    height: 38px;
-    border-radius: 4px;
-    z-index: 10;
+.cart {
+    width: 24px;
+    height: 24px;
 }
 
 .count-product {
-    position: absolute;
-    top: 0;
-    transform: translate(14px, 13px);
-    z-index: 10;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        gap: 8px;
+        width: 24px;
+        height: 24px;
+        background: rgba(247, 245, 243, 0.1);
+        border-radius: 200px;
 }
 
-.productsCards {
-    box-sizing: border-box;
+.count-product p {
+    position: relative;
+    top: 8px;
+    width: 7px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.productsCard {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    gap: 40px;
+    gap: 24px;
+    width: auto;
     height: auto;
 }
 
-.productsCards h2 {
-    width: 94px;
-    height: 28px;
-    font-family: 'Outfit';
+.productsCard h2 {
+    width: auto;
+    height: auto;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -165,10 +187,18 @@ body {
     gap: 24px;
     width: 1200px;
     height: auto;
-    background: #FFFFFF;
 }
 
-.frame13 h3 {
+.producTable {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    width: 792px;
+    height: auto;
+}
+
+.producTable h3 {
     width: auto;
     height: 24px;
     font-style: normal;
@@ -178,8 +208,164 @@ body {
     color: #000000;
 }
 
-.purchase {
+.producTable hr {
+    width: 776px;
+    height: 0px;
+    border: 1px solid #E3DED7;
+}
+
+.rowItem {
     display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    gap: 24px;
+    width: auto;
+    height: auto;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 88px;
+    height: 55.66px;
+}
+
+.minus-input {
+    width: 24px;
+    height: 24px;
+}
+
+.minus {
+    position: relative;
+    top: -2px;
+    left: 4.5px;
+    width: 15px;
+    height: auto;
+}
+
+.number-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    width: 24px;
+    height: 24px;
+    background: rgba(42, 91, 69, 0.1);
+    border-radius: 200px;
+}
+
+.addQuantity {
+    position: relative;
+    top: 7px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #2A5B45;
+}
+
+.plus-input {
+    width: 24px;
+    height: 24px;
+}
+
+.plus {
+    position: relative;
+    top: -2px;
+    left: 4.5px;
+    width: 15px;
+    height: 15px;
+}
+
+.coffeBag {
+    width: 55.66px;
+    height: 55.66px;
+}
+
+.itemImg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    width: 306.34px;
+    height: auto;
+}
+
+.item-title {
+    width: 147px;
+    height: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.cart-price {
+    width: 149px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.item-title-details {
+
+    display: flex;
+    position: relative;
+    top: 15px;
+
+    flex-direction: row;
+    align-items: baseline;
+    padding: 0px;
+    gap: 8px;
+    width: 54px;
+    height: 24px;
+}
+
+.item-title-details h3 {
+    width: 54px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.delete-product {
+    display: flex;
+    position: relative;
+    top: 15px;
+    left: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: none;
 }
 
 .shipping {
@@ -193,7 +379,7 @@ body {
 }
 
 .details {
-        display: flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
@@ -201,7 +387,7 @@ body {
     width: 657px;
     height: auto;
     line-height: 0;
-    
+
 }
 
 .standar {
@@ -235,8 +421,9 @@ body {
 .totalCart {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     padding: 24px;
+    gap: 16px;
     width: 384px;
     height: auto;
     background: #F7F5F3;
@@ -246,16 +433,16 @@ body {
 .totalDetails {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     padding: 0px;
     gap: 16px;
-    width: 336px;
+    width: auto;
     height: auto;
 }
 
 .totalDetails h3 {
     width: 129px;
-    height: auto;
+    height: 24px;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -265,7 +452,8 @@ body {
 
 .totalDetails hr {
     width: 336px;
-
+    height: 0px;
+    border: 1px solid #E3DED7;
 }
 
 .subTotalDetails {
@@ -274,8 +462,20 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     padding: 0px;
+    gap: 16px;
     width: 336px;
     height: 16px;
+}
+
+.detailOfTotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 336px;
+    height: 40px;
 }
 
 .subtotalTitle {
@@ -286,6 +486,7 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+
 }
 
 .subtotalAmount {
@@ -296,10 +497,31 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+    text-align: right;
+}
+
+.totalTitle {
+    width: 45px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.totalAmount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 8px;
+    width: 107px;
+    height: 40px;
 }
 
 .subtotalIVA {
-    width: 107px;
+    width: 127px;
     height: 16px;
     font-style: normal;
     font-weight: 400;
@@ -307,6 +529,42 @@ body {
     line-height: 16px;
     text-align: right;
     color: #515051;
+}
+
+.totalBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 196px;
+    height: 40px;
+    background: #2A5B45;
+    opacity: 0.3;
+    border-radius: 4px;
+}
+
+.payAndOrder {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+    width: auto;
+    height: 50px;
+    background: #2A5B45;
+    opacity: 0.3;
+    border-radius: 4px;
+}
+
+.payAndOrder p {
+    width: 148px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
 }
 
 .buttonsWrapper {

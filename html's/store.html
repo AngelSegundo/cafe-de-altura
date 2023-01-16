@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
-    <link rel="stylesheet" href="../styles/tienda.css">
+    <link rel="stylesheet" href="../styles/store.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
                 <img src="../assets/img/coffeCup.png" alt="Coffe Cup">
             </article>
             <article class="menuWrapper">
-                <a href="./tienda.html">Tienda</a>
+                <a href="./store.html">Tienda</a>
                 <a href="">Suscipción</a>
                 <a href="">Para empresas</a>
                 <a href="">Sobre nosotros</a>
@@ -35,10 +35,14 @@
                     <a href="">Iniciar sesión</a>
                 </div>
             </article>
-            <picture onclick="showCart()" class="shopingCarIcon">
-                <img class="cart" src="../assets/img/Carr.png" alt="Carrito de compras">
-            </picture>
-            <div class="count-product"></div>
+            <div onclick="showCart()" class="shopingCarIcon">
+                <div>
+                    <img class="cart" src="../assets/img/Carr.png" alt="Carrito de compras">
+                </div>
+                <div class="count-product">
+                    <p></p>
+                </div>
+            </div>
 
             <div class="cart-products" id="products-id" style="display: none;">
                 <div>
@@ -47,19 +51,7 @@
                     </div>
                     <div class="basketHeading">
                         <h3>Cesta</h3>
-                    </div>
-                    <div>
-                        <div class="infoProduct">
-                            <div id="Cant">
-                                <h6>Cantidad</h5>
-                            </div>
-                            <div id="brand">
-                                <h6>Producto</h5>
-                            </div>
-                            <div id="price">
-                                <h6>precio</h6>
-                            </div>
-                        </div>
+                        <hr>
                     </div>
                 </div>
 
@@ -70,8 +62,10 @@
                     <!--<h5>Tu cestas de Café de Altura está Vacía</h5> -->
                 </div>
                 <div>
-                    <hr>
-                    <h2>Total: <strong class="price-total">0</strong>€</h2>
+                    
+                    <h2 class="nQuantity">Subtotal: (<span>0</span> productos): <strong class="price-total subtotal"><span>0</span>.00€</strong></h2>
+                    <p class="subtotalIVA iva">Incluye <span>0</span>€ de IVA</p>
+                    <p class="subtotalAmount total" style="display: none"><span>0</span>.00€</p>
                     <button class="clean">Vaciar Cesta</button>
                     <button class="processOrder">Tramitar Pedido</button>
                 </div>
@@ -192,7 +186,7 @@
                         </article>
                     </div>
                     <div class="menuFooter">
-                        <a href="">Tienda</a>
+                        <a href="../html's/store.html">Tienda</a>
                         <a href="">Suscipción</a>
                         <a href="">Para empresas</a>
                         <a href="">Sobre nosotros</a>
@@ -210,11 +204,12 @@
         <section class=" copyRighFooter">
             <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
         </section>
-        <script src="../JS/tienda.js"></script>
-        <script src="../JS/carrito.js"></script>
-        <script src="../JS/pedido.js"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../JS/store.js"></script>
+        <script src="../JS/shoppingCart.js"></script>
+        <script src="../JS/order.js"></script>
 
+        
 
 
 

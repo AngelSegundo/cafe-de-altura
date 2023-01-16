@@ -1,3 +1,62 @@
+// --- --- --- Productos--- --- --- --- ---//
+document.addEventListener('DOMContentLoaded', () => {
+    fetchData()
+})
+
+const fetchData = async () => {
+    try {
+        const res = await fetch('https://cafe-de-altura-api.vercel.app/api/products')
+        const data = await res.json()
+        let products = data.products
+        showProducts(products)
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+const showProducts = products => {
+    products.forEach(product => {
+        let article = document.createElement('article')
+        article.setAttribute('class', 'productCard')
+        document.querySelector('.productCardWrapper').appendChild(article)
+        article.innerHTML = `
+            <picture class="productImg">
+                <img src="${product.img_url}" alt="Coffee Bag">
+            </picture>
+                <div class="productInfo">
+                    <a class="productName" href="" id="${product._id}">${product.brand}</a>
+                    <p class="productPrice"><span class="Price">${product.price}</span>.00 €</p>
+                </div>
+                <div class="productButton">
+                    <button class="addProduct" onclick="showCart2()">Añadir</button>
+                </div>
+            `
+        if (product.available === false) {
+            article.style.opacity = '60%'
+            article.style.cursor = 'not-allowed'
+            article.style.pointerEvents = 'none'
+        }
+    });
+}
+
+function showCart() {
+    if (document.getElementById("products-id").style.display == "block") {
+        document.getElementById("products-id").style.display = "none"
+    } else {
+        document.getElementById("products-id").style.display = "block";
+    }
+}
+
+function closeBtn() {
+    document.getElementById("products-id").style.display = "none";
+}
+
+function showCart2() {
+    if (document.getElementById("products-id").style.display === "none") {
+        document.getElementById("products-id").style.display = "block"
+    }
+}
+
 
 // //--- --- --- --- Globals Selectors --- --- --- --- //
 
@@ -145,47 +204,5 @@
 //     }
 // }
 
-
-// --- --- --- Productos--- --- --- --- ---//
-
-fetch('https://cafe-de-altura-api.vercel.app/api/products')
-    .then(response => response.json())
-    .then(response => {
-        response.products.forEach(product => {
-            let article = document.createElement('article')
-            article.setAttribute('class', 'productCard')
-            document.querySelector('.productCardWrapper').appendChild(article)
-            article.innerHTML = `
-            <picture class="productImg">
-                         <img src="${product.img_url}" alt="Coffee Bag">
-                     </picture>
-                     <div class="productInfo">
-                         <a class="productName" href="" id="${product._id}">${product.brand}</a>
-                         <p class="productPrice"><span class="Price">${product.price}</span>€</p>
-                     </div>
-                     <div class="productButton">
-                         <button class="addProduct" onclick="showCart2()">Añadir</button>
-                     </div>
-                      `
-        });
-    })
-
-function showCart() {
-    if (document.getElementById("products-id").style.display == "block") {
-        document.getElementById("products-id").style.display = "none"
-    } else {
-        document.getElementById("products-id").style.display = "block";
-    }
-}
-
-function closeBtn() {
-    document.getElementById("products-id").style.display = "none";
-}
-
-function showCart2() {
-    if (document.getElementById("products-id").style.display === "none") {
-        document.getElementById("products-id").style.display = "block"
-    }
-}
 
 

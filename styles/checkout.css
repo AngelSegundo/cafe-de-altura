@@ -116,23 +116,46 @@ body {
     text-align: center;
 }
 
-
 .shopingCarIcon {
-    justify-items: center;
-    text-align: justify;
-    align-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 56px;
+    height: 24px;
+}
 
-    width: 39px;
-    height: 38px;
-    border-radius: 4px;
-    z-index: 10;
+.cart {
+    width: 24px;
+    height: 24px;
 }
 
 .count-product {
-    position: absolute;
-    top: 0;
-    transform: translate(14px, 13px);
-    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    width: 24px;
+    height: 24px;
+    background: rgba(247, 245, 243, 0.1);
+    border-radius: 200px;
+}
+
+.count-product p {
+    position: relative;
+    top: 8px;
+    width: 7px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .productsCards {
@@ -144,7 +167,7 @@ body {
     gap: 40px;
     height: auto;
     border: 1px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
     flex: none;
     order: 3;
     align-self: stretch;
@@ -206,21 +229,285 @@ body {
     flex-grow: 0;
 }
 
+.shipping {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 776px;
+    height: 36px;
+}
 
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 665px;
+    height: 36px;
+}
 
+.p1 {
+    width: auto;
+    height: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
 
+.p2 {
+    width: auto;
+    height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
 
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 8px;
+    width: 55px;
+    height: 24px;
+}
 
+.price h3 {
+    display: none;
+    width: 63px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
 
+.frame18 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 279px;
+    height: 181px;
+}
 
+.articleForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3px;
+    width: 279px;
+    height: 55px;
+}
 
+.articleForm label {
+    width: 36px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+}
 
+.articleForm input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 8px;
+    gap: 8px;
+    width: 279px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.frame17 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 279px;
+    height: 55px;
+}
+
+.validation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3px;
+    width: 127.5px;
+    height: 55px;
+}
+
+.validation label {
+    width: 107px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.validation input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 8px;
+    gap: 8px;
+    width: 127.5px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.hr {
+    width: 336px;
+    height: 0px;
+    border: 1px solid #E3DED7;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 521px;
+    height: 433px;
+}
+
+.address input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3px;
+    width: 521px;
+    height: 55px;
+}
+
+.address .articleForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3px;
+    width: 521px;
+    height: 55px;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 521px;
+    height: 55px;
+}
+
+.locationDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3px;
+    width: 248.5px;
+    height: 55px;
+}
+
+.locationDiv label {
+    width: 53px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.locationDiv input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 8px;
+    gap: 8px;
+    width: 248.5px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.homeAddress {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 521px;
+    height: 55px;
+}
+
+.homeAddressDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3px;
+    width: 112.25px;
+    height: 55px;
+}
+
+.homeAddressDiv label {
+    width: 27px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.homeAddressDiv input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 8px;
+    gap: 8px;
+    width: 112.25px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
 
 .totalCart {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     padding: 24px;
+    gap: 16px;
     width: 384px;
     height: auto;
     background: #F7F5F3;
@@ -230,16 +517,16 @@ body {
 .totalDetails {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     padding: 0px;
     gap: 16px;
-    width: 336px;
+    width: auto;
     height: auto;
 }
 
 .totalDetails h3 {
     width: 129px;
-    height: auto;
+    height: 24px;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -249,7 +536,8 @@ body {
 
 .totalDetails hr {
     width: 336px;
-
+    height: 0px;
+    border: 1px solid #E3DED7;
 }
 
 .subTotalDetails {
@@ -258,8 +546,20 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     padding: 0px;
+    gap: 16px;
     width: 336px;
     height: 16px;
+}
+
+.detailOfTotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 336px;
+    height: 40px;
 }
 
 .subtotalTitle {
@@ -270,6 +570,7 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+
 }
 
 .subtotalAmount {
@@ -280,10 +581,31 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+    text-align: right;
+}
+
+.totalTitle {
+    width: 45px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.totalAmount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 8px;
+    width: 107px;
+    height: 40px;
 }
 
 .subtotalIVA {
-    width: 107px;
+    width: 127px;
     height: 16px;
     font-style: normal;
     font-weight: 400;
@@ -293,17 +615,39 @@ body {
     color: #515051;
 }
 
-.payAndOrder {
+.totalBtn {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-start;
     padding: 12px 24px;
     gap: 8px;
-    width: auto;
-    height: auto;
+    width: 196px;
+    height: 40px;
     background: #2A5B45;
     opacity: 0.3;
     border-radius: 4px;
+}
+
+.payAndOrder {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+    width: auto;
+    height: 50px;
+    background: #2A5B45;
+    border-radius: 4px;
+}
+
+.payAndOrder p {
+    width: 148px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
 }
 
 .copyRighFooter {

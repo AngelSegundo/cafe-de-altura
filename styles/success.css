@@ -78,7 +78,6 @@ body {
     gap: 8px;
     width: 140px;
     height: 24px;
-
 }
 
 .phoneContact p {
@@ -115,7 +114,6 @@ body {
     text-align: center;
 }
 
-
 .basketHeading {
     display: flex;
     justify-content: space-between;
@@ -147,17 +145,18 @@ body {
     background-color: #2B2A2B;
 }
 
-.productsCards {
+.cards {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px;
     gap: 24px;
-    width: 1280px;
+    width: auto;
+    min-height: 1050px;
     height: auto;
 }
 
-.productsCards img {
+.illustration {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -169,7 +168,18 @@ body {
     border-radius: 20px;
 }
 
-.productsCards h2 {
+.clipboardCheck {
+    width: 40px;
+    height: 40px;
+}
+
+.clipboardCheck img {
+    position: relative;
+    left: 19%;
+    top: 5%;
+}
+
+.cards h2 {
     width: 383px;
     height: 28px;
     font-style: normal;
@@ -190,7 +200,19 @@ body {
     color: #000000;
 }
 
-.productsCards h3 {
+.resumen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+    width: 1200px;
+    height: auto;
+    background: #F7F5F3;
+    border-radius: 10px;
+}
+
+.resumen h3 {
     width: 1152px;
     height: 24px;
     font-style: normal;
@@ -198,6 +220,133 @@ body {
     font-size: 18px;
     line-height: 24px;
     color: #000000;
+}
+
+.rowItem {
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    gap: 24px;
+    width: 1200px;
+    height: auto;
+}
+
+.counter {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 88px;
+    height: 55.66px;
+}
+
+.number-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    width: 24px;
+    height: 24px;
+    background: rgba(42, 91, 69, 0.1);
+    border-radius: 200px;
+}
+
+.addQuantity {
+    position: relative;
+    top: 7px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #2A5B45;
+}
+
+.coffeBag {
+    width: 55.66px;
+    height: 55.66px;
+}
+
+.itemImg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.item-content {
+
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    width: 990px;
+    height: auto;
+}
+
+.item-title {
+    width: 147px;
+    height: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.cart-price {
+    width: 149px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+
+
+}
+
+.item-title-details {
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 8px;
+    width: 54px;
+    height: 24px;
+
+}
+
+.item-title-details h3 {
+    width: 54px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.details {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 1152px;
+    height: auto;
 }
 
 .details hr {
@@ -237,20 +386,40 @@ body {
     color: #000000;
 }
 
+.carrDetailsTotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 1152px;
+    height: 60px;
+}
+
+.carrDetailsTotalp {
+    width: 45px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
 .frame14 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 0px;
     gap: 8px;
-    width: 107px;
-    height: 40px;
+    width: auto;
+    height: auto;
 }
 
-
 .smallP {
-    width: 107px;
-    height: 16px;
+    width: auto;
+    height: auto;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -269,17 +438,17 @@ body {
     height: 40px;
     background: #2A5B45;
     border-radius: 4px;
-    font-style: normal;
-    line-height: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
 }
 
-
-
-
-
-
+.backToStore {
+    width: 110px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
 
 .copyRighFooter {
     display: flex;

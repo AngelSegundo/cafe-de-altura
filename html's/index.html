@@ -20,7 +20,7 @@
                 <img src="../assets/img/coffeCup.png" alt="Coffe Cup">
             </article>
             <article class="menuWrapper">
-                <a href="./tienda.html">Tienda</a>
+                <a href="./store.html">Tienda</a>
                 <a href="">Suscipción</a>
                 <a href="">Para empresas</a>
                 <a href="">Sobre nosotros</a>
@@ -35,31 +35,37 @@
                     <a href="">Iniciar sesión</a>
                 </div>
             </article>
-            <picture onclick="showCart()" class="shopingCarIcon">
-                <img class="cart" src="../assets/img/Carr.png" alt="Carrito de compras">
-                <div class="count-product"></div>
-            </picture>
+            <div onclick="showCart()" class="shopingCarIcon">
+                <div>
+                    <img class="cart" src="../assets/img/Carr.png" alt="Carrito de compras">
+                </div>
+                <div class="count-product">
+                    <p></p>
+                </div>
+            </div>
 
-            <div class="cart-products" id="products-id">
+            <div class="cart-products" id="products-id" style="display: none">
                 <div>
                     <div>
                         <button class="close-btn" onclick="closeBtn()">Cerrar</button>
                     </div>
                     <div class="basketHeading">
                         <h3>Cesta</h3>
-                        <!--- <h6>precio</h6> -->
+                        <hr>
                     </div>
                 </div>
-
                 <div class="card-items">
+                    <hr>
                     <!-- Aqui van los productos del carrito-->
 
 
                     <!--<h5>Tu cestas de Café de Altura está Vacía</h5> -->
                 </div>
                 <div>
-                    <hr>
-                    <h2>Total: <strong class="price-total">0</strong>€</h2>
+                    <h2 class="nQuantity">Subtotal: (<span>0</span> productos): <strong
+                            class="price-total subtotal"><span>0</span>.00€</strong></h2>
+                    <p class="subtotalIVA iva">Incluye <span>0</span>€ de IVA</p>
+                    <p class="subtotalAmount total" style="display: none"><span>0</span>.00€</p>
                     <button class="clean">Vaciar Cesta</button>
                     <button class="processOrder">Tramitar Pedido</button>
                 </div>
@@ -77,7 +83,7 @@
                     </h1>
                     <div class="button">
                         <a class="origins" href="">Descubrir orígenes</a>
-                        <a class="shopping" href="tienda.html">Comprar café</a>
+                        <a class="shopping" href="store.html">Comprar café</a>
                     </div>
                 </div>
                 <picture class="heroImg">
@@ -119,7 +125,7 @@
         <section class="container productsCards">
             <h2>Novedades</h2>
             <div class="container productCardWrapper">
-                <article class="productCard">
+                <!-- <article class="productCard">
                     <picture class="productImg">
                         <img src="../assets/img/coffeeBagTarrazú.png" alt="Coffee Bag Tarrazú">
                     </picture>
@@ -167,10 +173,10 @@
                     <div class="productButton">
                         <button class="addProduct">Añadir</button>
                     </div>
-                </article>
+                </article> -->
             </div>
             <div class="container link-product">
-                <a class="link" href="./tienda.html">Ver todos</a>
+                <a class="link" href="./store.html">Ver todos</a>
                 <picture class="heroImg">
                     <img src="../assets/img/Iconarrowblack.png" alt="Arrow">
                 </picture>
@@ -298,7 +304,7 @@
                             </div>
                         </article>
                         <article class="articleForm help">
-                            <button id="enviarForm">Enviar</button>
+                            <button id="enviarForm" onclick="formValidation()">Enviar</button>
 
                         </article>
                     </form>
@@ -331,7 +337,7 @@
                         </article>
                     </div>
                     <div class="menuFooter">
-                        <a href="./tienda.html">Tienda</a>
+                        <a href="./store.html">Tienda</a>
                         <a href="">Suscipción</a>
                         <a href="">Para empresas</a>
                         <a href="">Sobre nosotros</a>
@@ -349,7 +355,11 @@
         <section class=" copyRighFooter">
             <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
         </section>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="../JS/main.js"></script>
+        <script src="../JS/shoppingCart.js"></script>
+        <script src="../JS/order.js"></script>
+
     </main>
 </body>
 

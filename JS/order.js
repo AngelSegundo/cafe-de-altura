@@ -1,25 +1,29 @@
 const cart = new ShoppingCart()
-const bag = document.querySelector('.cart-products')
-const products = document.querySelector('.productCardWrapper')
+const eraseProduct = document.querySelector('.card-items')
 const productsList = document.querySelector('.card-items')
+const products = document.querySelector('.productCardWrapper')
+const productsRows = document.querySelectorAll('.rowItem')
 const clearCartBtn = document.querySelector('.clean')
 const processOrderBtn = document.querySelector('.processOrder')
 
-cargarEventos()
 
-function cargarEventos() {
+loadEvents()
+
+function loadEvents() {
+    
     products.addEventListener('click', (e) => { cart.addProduct(e) })
 
-    bag.addEventListener('click', (e) => { cart.deleteProduct(e) })
+    productsList.addEventListener('click', (e) => { cart.btnAction(e)})
+
+    eraseProduct.addEventListener('click', (e) => { cart.deleteProduct(e) })
 
     clearCartBtn.addEventListener('click', (e) => { cart.clearCart(e) })
 
     document.addEventListener('DOMContentLoaded', cart.readProductsLS())
-
+    
     processOrderBtn.addEventListener('click', (e) => { cart.processOrder(e) })
+    
+    cart.getTotal()
+    
 
 }
-
-
-
-

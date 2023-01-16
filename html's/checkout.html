@@ -35,10 +35,14 @@
                     <a href="#">Iniciar sesión</a>
                 </div>
             </article>
-            <picture class="shopingCarIcon">
-                <img class="cart" src="../assets/img/Carr.png" alt="Carrito de compras">
-                <div class="count-product"></div>
-            </picture>
+            <div class="shopingCarIcon">
+                <div>
+                    <img class="cart" src="../assets/img/Carr.png" alt="Carrito de compras">
+                </div>
+                <div class="count-product">
+                    <p></p>
+                </div>
+            </div>
         </nav>
 
         <section class="container productsCards">
@@ -46,152 +50,154 @@
             <div class="frame13">
                 <div class="productTable">
                     <h3>Seleccionar método de pago</h3>
-
                     <div class="shipping">
-                        <input class="radio" type="radio" id="choice1" name="paymentMethod" value="debit" checked />
-                        <div class="details">
-                            <p>Tarjeta de débito</p>
-                            <p>Opción estándar sin seguimiento</p>
+                        <div>
+                            <input class="radio" type="radio" id="choice1" name="paymentMethod" value="debit"/>
                         </div>
-                        <form id="form">
-                            <article class="articleForm">
-                                <label for="nameForm">Titular</label>
-                                <input type="text" id="NameForm" placeholder="Nombre del titular">
-                            </article>
-                            <article class="articleForm">
-                                <label for="cardNumber">Número de la tarjeta</label>
-                                <input type="text" id="cardNumber" placeholder="1234 1234 1234 1234">
-                            </article>
-                            <article class="articleForm">
-                                <div>
-                                    <label for="expiry">Fecha de caducidad</label>
-                                    <input type="text" id="expiry" placeholder="MM / YY">
-                                </div>
-                                <div>
-                                    <label for="cvc">CVC</label>
-                                    <input type="text" id="cvc" placeholder="123">
-                                </div>
-                            </article>
-                        </form>
-
+                        <div class="details">
+                            <p class="p1">Tarjeta de débito</p>
+                            <p class="p2">Opción estándar sin seguimiento</p>
+                        </div>
                         <div class="price">
-                            <p><span>5</span>€</p>
+                            <h3><span>5</span>€</h3>
                         </div>
                     </div>
 
+                    <form class="frame18" id="debitForm">
+                        <article class="articleForm">
+                            <label for="nameForm">Titular</label>
+                            <input type="text" id="nameForm" placeholder="Nombre del titular">
+                        </article>
+                        <article class="articleForm">
+                            <label for="cardNumber">Número de la tarjeta</label>
+                            <input type="text" id="cardNumber" placeholder="1234 1234 1234 1234">
+                        </article>
+                        <article class="frame17">
+                            <div class="validation">
+                                <label for="expiry">Fecha de caducidad</label>
+                                <input type="text" id="expiry" placeholder="MM / YY">
+                            </div>
+                            <div class="validation">
+                                <label for="cvc">CVC</label>
+                                <input type="text" id="cvc" placeholder="123">
+                            </div>
+                        </article>
+                    </form>
                     <hr>
-
                     <div class="shipping">
-                        <input class="radio" type="radio" id="choice2" name="paymentMethod" value="transfer" />
+                        <div>
+                            <input class="radio" type="radio" id="choice2" name="paymentMethod" value="transfer" />
+                        </div>
                         <div class="details">
-                            <p>Transferencia bancaria a la cuenta ES12 1234 1234 123457890</p>
-                            <p>Será necesario recibir el comprobante de la transferencia para preparar tu pedido</p>
+                            <p class="p1">Transferencia bancaria a la cuenta ES12 1234 1234 123457890</p>
+                            <p class="p2">Será necesario recibir el comprobante de la transferencia para preparar tu
+                                pedido</p>
                         </div>
                         <div class="price">
-                            <p><span>5</span>€</p>
+                            <h3><span>5</span>€</h3>
                         </div>
                     </div>
-
                     <hr>
-
                     <div class="shipping">
-                        <input class="radio" type="radio" id="choice3" name="paymentMethod" value="bizum" />
+                        <div>
+                            <input class="radio" type="radio" id="choice3" name="paymentMethod" value="bizum" />
+                        </div>
                         <div class="details">
-                            <p>Bizum <img src="../assets/img/Bizum.png" alt="Bizum logo"></p>
+                            <p class="p1">Bizum <img src="../assets/img/Bizum.png" alt="Bizum logo"></p>
                         </div>
                         <div class="price">
-                            <p><span>5</span>€</p>
+                            <h3><span>5</span>€</h3>
                         </div>
                     </div>
-
-                    <hr>
                     <h3>Dirección de envío</h3>
-                    <div class="address">
-                        <form id="form">
-                            <article class="articleForm">
-                                <label for="nameForm">Nombre</label>
-                                <input type="text" id="NameForm" placeholder="">
-                            </article>
-                            <article class="articleForm">
-                                <label for="lastName">Apellidos</label>
-                                <input type="text" id="lastName" placeholder="">
-                            </article>
-                            <article class="articleForm">
-                                <label for="phone">Teléfono</label>
-                                <input type="text" id="phone" placeholder="+34 600 600 600">
-                            </article>
-                            <article class="articleForm">
-                                <label for="email">Email</label>
-                                <input type="text" id="email" placeholder="">
-                            </article>
-                            <article class="articleForm">
-                                <select id="country" class="form-select" aria-label="Default select example">
-                                    <option selected>España</option>
-                                    <option value="Andorra">Andorra</option>
-                                    <option value="Francia">Francia</option>
-                                    <option value="Gibraltar">Gibraltar</option>
-                                    <option value="Portugal">Portugal</option>
-                                    <option value="Morocco">Morocco</option>
-                                </select>
-                            </article>
-                            <article class="articleForm">
-                                <div>
-                                    <label for="population">Poblacion</label>
-                                    <input type="text" id="population" placeholder="">
-                                </div>
-                                <div>
-                                    <label for="cp">CP</label>
-                                    <input type="text" id="cp" placeholder="123">
-                                </div>
-                            </article>
-                            <article class="articleForm">
-                                <div>
-                                    <label for="street">Calle</label>
-                                    <input type="text" id="street" placeholder="">
-                                </div>
-                                <div>
-                                    <label for="streetNumber">Nº</label>
-                                    <input type="text" id="streetNumber" placeholder="">
-                                </div>
-                                <div>
-                                    <label for="floor">Piso</label>
-                                    <input type="text" id="floor" placeholder="">
-                                </div>
-                                <div>
-                                    <label for="door">Puerta</label>
-                                    <input type="text" id="door" placeholder="">
-                                </div>
-                            </article>
-                        </form>
-                    </div>
+
+                    <form class="address" id="form">
+                        <article class="articleForm">
+                            <label class="adressLabel" for="nameForm">Nombre</label>
+                            <input type="text" id="adressNameForm" placeholder="">
+                        </article>
+                        <article class="articleForm">
+                            <label class="adressLabel" for="lastName">Apellidos</label>
+                            <input type="text" id="adresslastName" placeholder="">
+                        </article>
+                        <article class="articleForm">
+                            <label class="adressLabel" for="phone">Teléfono</label>
+                            <input type="text" id="adressPhone" placeholder="+34 600 600 600">
+                        </article>
+                        <article class="articleForm">
+                            <label class="adressLabel" for="email">Email</label>
+                            <input type="text" id="adressEmail" placeholder="">
+                        </article>
+                        <article class="articleForm">
+                            <label class="adressLabel" for="country">País</label>
+                            <select id="adressCountry" class="form-select" placeholder="Seleccionar">
+                                <option value="0" selected>Seleccionar...</option>
+                                <option value="España">España</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Francia">Francia</option>
+                                <option value="Gibraltar">Gibraltar</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Morocco">Morocco</option>
+                            </select>
+                        </article>
+                        <div class="location">
+                            <div class="locationDiv">
+                                <label for="population">Poblacion</label>
+                                <input type="text" id="adressPopulation" placeholder="">
+                            </div>
+                            <div class="locationDiv">
+                                <label for="cp">CP</label>
+                                <input type="text" id="adressCp" placeholder="123">
+                            </div>
+                        </div>
+                        <div class="homeAddress">
+                            <div class="homeAddressDiv">
+                                <label for="street">Calle</label>
+                                <input type="text" id="adressStreet" placeholder="">
+                            </div>
+                            <div class="homeAddressDiv">
+                                <label for="streetNumber">Nº</label>
+                                <input type="text" id="adressStreetNumber" placeholder="">
+                            </div>
+                            <div class="homeAddressDiv">
+                                <label for="floor">Piso</label>
+                                <input type="text" id="adressFloor" placeholder="">
+                            </div>
+                            <div class="homeAddressDiv">
+                                <label for="door">Puerta</label>
+                                <input type="text" id="adressDoor" placeholder="">
+                            </div>
+                        </div>
+                    </form>
                 </div>
 
-                <div class="container totalCart">
+                <div class="totalCart">
                     <div class="totalDetails">
                         <h3>Total del carrito</h3>
                         <hr>
                         <div class="subTotalDetails">
                             <p class="subtotalTitle">SUBTOTAL</p>
-                            <p class="subtotalAmount subtotal"><span>18</span>€</p>
+                            <p class="subtotalAmount subtotal"><span>00</span>,00€</p>
                         </div>
                         <div class="subTotalDetails">
                             <p class="subtotalTitle">ENVÍO</p>
-                            <p class="subtotalAmount"><span>GRATIS</span></p>
+                            <p class="subtotalAmount shippingAmount"><span></span></p>
                         </div>
                         <hr>
-                        <div class="subTotalDetails">
-                            <p class="subtotalTitle">TOTAL</p>
-                            <p class="subtotalAmount total"><span>18</span>€</p>
-                        </div>
-                        <p class="subtotalIVA iva">Incluye <span>3.16</span>€ de IVA</p>
-                        <hr>
-                        <div>
-                            <button class="payAndOrder">Pagar y realizar pedido</button>
+                        <div class="detailOfTotal">
+                            <p class="totalTitle">TOTAL</p>
+                            <div class="totalAmount">
+                                <p class="subtotalAmount total"><span>0</span>.00€</p>
+                                <p class="subtotalIVA iva">Incluye <span>0</span>€ de IVA</p>
+                            </div>
                         </div>
                     </div>
+                    <br>
+                    <button class="payAndOrder" disable = true>
+                        <p>Pagar y realizar pedido</p>
+                    </button>
                 </div>
             </div>
-
         </section>
 
 
@@ -214,9 +220,9 @@
 
 
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="../JS/carrito.js"></script>
+        <script src="../JS/shoppingCart.js"></script>
         <script src="../JS/checkout.js"></script>
-        
+
 
 
 

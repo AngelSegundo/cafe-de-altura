@@ -41,60 +41,56 @@
             </picture>
         </nav>
 
-        <section class="container productsCards">
-            <picture>
-                <img src="../assets/img/Icon.png" alt="">
-            </picture>
+        <section class="cards">
+            <div class="illustration">
+                <div class="clipboardCheck">
+                    <img src="../assets/img/Icon.png" alt="">
+                </div>
+            </div>
             <h2>El pedido ha sido realizado con éxito</h2>
-            <p class="cardP">El pedido # <span>12387</span> se encuentra en preparación.
-                Lo recibirás dentro de las fechas acordadas en tu envío.
-                Hemos enviado un ticket a tu correo electrónico.</p>
+            <p class="cardP">
+                El pedido # <span>12387</span> se encuentra en preparación.
+                <br>Lo recibirás dentro de las fechas acordadas en tu envío.
+                <br>Hemos enviado un ticket a tu correo electrónico.
+            </p>
             <div class="resumen">
                 <h3>Tu pedido</h3>
-            </div>
-            <hr>
-            <div class="productsSuccess">
-                los productos van aqui
-            </div>
-            <hr>
-            <div class="details">
-                <hr>
-                <div class="carrDetails">
-                    <p class="p1">SUBTOTAL</p>
-                    <P class="p2 subtotal"><span>18</span>€</P>
+                <div class="cart-products">
+                    <!--aqui van los productos-->
                 </div>
-                <div class="carrDetails">
-                    <p class="p1">ENVÍO</p>
-                    <P class="p2"><span>GRATIS</span></P>
-                </div>
-                <hr>
-                <div class="carrDetails">
-                    <p class="p2">TOTAL</p>
-                    <div class="frame14">
-                        <p class="p2 total"><span>18</span>€</p>
-                        <p class="smallP iva">Incluye<span>3,78</span>€ de IVA</p>
-
+                <div class="details">
+                    <hr>
+                    <div class="carrDetails">
+                        <p class="p1">SUBTOTAL</p>
+                        <P class="p2 subtotal"><span>0</span>,00€</P>
+                    </div>
+                    <div class="carrDetails">
+                        <p class="p1">ENVÍO</p>
+                        <p class="p2 subtotalAmount shippingAmount"><span></span></p>
+                    </div>
+                    <hr>
+                    <div class="carrDetailsTotal">
+                        <p class="carrDetailsTotalp">TOTAL</p>
+                        <div class="frame14">
+                            <p class="p2 total"><span>0</span>,00€</p>
+                            <p class="smallP iva">Incluye<span>0</span>,00€ de IVA</p>
+                        </div>
                     </div>
                 </div>
-
             </div>
-            <div class="backToStore">
-                <a class="backToStoreBtn">Volver a la tienda</a>
-
-            </div>
-
-
-
-
+            <button class="backToStoreBtn">
+                <p class="backToStore">Volver a la tienda</p>
+            </button>
         </section>
 
         <section class=" copyRighFooter">
             <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
         </section>
-        
-        
-        <script src="../JS/carrito.js"></script>
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../JS/shoppingCart.js"></script>
         <script src="../JS/success.js"></script>
+
     </main>
 </body>
 
